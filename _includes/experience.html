@@ -1,0 +1,46 @@
+<br>
+<h2>Experience</h2>
+{% assign experience = site.data.navigation.experience %}
+<section>
+    {%for exp in experience %}
+    <h3> {{ exp.title }}</h3>
+    <ul>
+        <li>
+            {{ exp.company }}
+            <span class="year" style="float:right;">{{ exp.years }}</span>
+        </li>
+    </ul>
+    <p>{{exp.description}}</p>
+    
+    {% if exp.link %}
+        <a class="links" href="{{ exp.link }}" target="_blank" >Website</a>
+        <br>
+        <br>
+    {% endif %}
+     <br>
+    {% endfor %}
+    <br>
+</section>
+<br>
+
+<h2>Volunteering</h2>
+{% assign volunteering = site.data.navigation.volunteering %}
+<section>
+    {%for vol in volunteering %}
+    <h3> {{ vol.title }}</h3>
+    <ul>
+        <li>
+            {{ vol.position }}
+            <span class="year" style="float:right;">{{ vol.years }}</span>
+        </li>
+    </ul>
+    <p>{{vol.description}}</p>
+    
+    {% if vol.link %}
+        <a class="links" href="{{ vol.link }}" target="_blank" >Website</a>
+        <br>
+        <br>
+    {% endif %}
+     <br>
+    {% endfor %}
+</section>
