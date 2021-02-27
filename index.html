@@ -1,0 +1,78 @@
+---
+title: My CV
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{'/assets/css/main.css' | absolute_url}}">
+    <title>CV</title>
+</head>
+<body>
+    <div class="grid_container">
+        <div class="sidebar1">
+            <div class="fix1">
+                <div class="intoduction">
+                    <h1>{{ site.data.navigation.name }}</h1>
+                    <img src="/assets/me.png">
+                </div>
+                <div class="icons">
+                    <h3>Contact</h3>
+                    <li class="email"><i class="fa fa-envelope"></i>
+                        <a href="{{ site.data.navigation.email }}" target="_blank">{{ site.data.navigation.email }}</a>
+                    <li class="email"><i class="fa fa-envelope"></i>
+                        <a href="{{ site.data.navigation.work-email }}" target="_blank">{{ site.data.navigation.work-email }}</a>
+                    <li class="github"><i class="fa fa-github"></i>
+                        <a href="https://www.github.com/{{ site.data.navigation.github }}" target="_blank">{{ site.data.navigation.github }}</a>
+                    <li class="linkedin"><i class="fa fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/{{ site.data.navigation.linkedin }}" target="_blank">{{ site.data.navigation.linkedin }}</a>
+                    <li class="twitter"><i class="fa fa-twitter"></i>
+                        <a href="{{ site.data.navigation.twitter_link }}" target="_blank">{{ site.data.navigation.twitter }}</a>
+                
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <h4>{{ site.data.navigation.education }}</h4>
+                    <p>{{ site.data.navigation.university }}</p>
+                    <p>{{ site.data.navigation.years }}</p>
+
+                    <h3>Languages</h3>
+                    {% assign languages = site.data.navigation.languages %}
+                    <ul>
+                        {%for language in languages %}
+                        <li>
+                          {{ language.idiom }}
+                          <span class="lang-desc">({{ language.level }})</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+
+                    <h3>Skills</h3>
+                    {% assign skills = site.data.navigation.skills %}
+                    <ul>
+                        {%for skill in skills %}
+                        <li>
+                          {{ skill.like }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar2">
+            <div class="fix2">
+                <h2>Career Profile </h2>
+                <p>{{ site.data.navigation.career}}</p>
+                <br>
+                {% include experience.html %}
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
