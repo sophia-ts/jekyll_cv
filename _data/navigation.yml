@@ -1,0 +1,81 @@
+name: Sophia Tsivoula
+
+# links
+linkedin: sophia-tsivoula
+github: sophia-ts
+email: sophia.sts.21@gmail.com
+work-email: p18tsiv@ionio.gr    
+twitter: '@SophiaTs_'
+twitter_link: https://twitter.com/SophiaTs_
+
+#education
+education:   BSc in Computer Science
+university:  Ionian University
+years:  2018 - 2022
+
+# languages
+languages:
+  - idiom: Greek
+    level: Native
+
+  - idiom: English
+    level: Professional
+
+  - idiom: French
+    level: Elementary
+
+# skills
+skills:
+  - like: HTML
+  - like: CSS
+  - like: Python
+  - like: MySQL
+
+#career
+career: | 
+  I am a passionate Junior Web Developer and Researcher interested in modern web technologies 
+  and medical applications. Personally enjoy volunteering and work with large groups of people. 
+  I ram able to communicate with both technical and not technical colleges and I am able to 
+  make critical decisions for the benefit of many. I can be described as hard working, 
+  reliable and resourceful in demanding projects.
+
+
+# experience
+experience:  
+  - title: Web Develoment
+    company: Lingua Technis
+    years: 2019 - 2020
+    link: https://lingua-technis.com/
+    description: |
+      Developed a personalized multilingual CV for translation services using WordPress. 
+      The personalized CV contained, besides general information about the client, a 
+      contact page, a list of the services the client could offer and the option to 
+      send via email document for translation on both German and English.
+  
+  - title: Research 
+    company: Ionian University
+    years: 2019 - Present
+    description: |
+      Presented a scientific paper called "An application for exploring visual perception.
+      A pilot neuroeducational study." And presented it in GeNeDis 2020 (Worldwide congress).
+      The application's goal was the neuroeducation of the human brain for individual with 
+      cognitive difficulties. The users had to observe an image for a few seconds and recreate it 
+      from memory on an empty canvas using their mobile device.
+    
+# volunteering
+volunteering:
+  - title: TEDx Ionian University
+    position: IT team
+    years: 2019 - Present
+    link: https://tedxionianuniversity.com/
+    # link: https://tedxionianuniversity.com/
+    description: |
+      Developed a presentation website and an e-shop for selling tickets for a virtual event. 
+      The website was created on WordPress using the Divi Visual Builder.
+    
+  - title: Ionian IEEE Student Branch 
+    position: Activity Planning Manager
+    years: 2020 - Present
+    description: |
+      Organized the activity planning team on the IEEE Ionian Student Branch and 
+      planned two successful webinars.
