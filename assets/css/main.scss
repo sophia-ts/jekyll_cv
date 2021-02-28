@@ -38,7 +38,9 @@ body{
           } 
         @media only screen and (max-width: 730px) {
             display: block;
-            // width:80%;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 auto;
             img{
                 width: 60%;
                 }
