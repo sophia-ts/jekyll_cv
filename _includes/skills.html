@@ -1,0 +1,9 @@
+<h3>Skills</h3>
+{% assign skills = site.data.navigation.skills %}
+<ul>
+    {%for skill in skills %}
+    <li>
+        {{ skill.like }}
+    </li>
+    {% endfor %}
+</ul>

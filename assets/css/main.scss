@@ -1,5 +1,6 @@
 --- 
 ---
+
 /*Variables*/
 $bgcolor: #7a7a7a;
 $header: #dbdbdb;
@@ -17,23 +18,35 @@ body{
     background-color: $bgcolor;
     color: $textcolor;
     text-align: left;
-    // width: fit-content;
     margin:0 auto;
     padding: 0 auto;
     font-family: 'Lato', sans-serif;
     max-width: 100em;    
-    // min-height: 900px;
-    h1{
-        color: $secondary;
-    }
     .grid_container{
         box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
         margin: 2em auto;
-        width: 70%;
+        width: 65em;
         height: 100%;
         display: grid;
         grid-template-columns: 35% 65%;
         min-height: 1000px;
+        @media only screen and (max-width: 1055px) {
+            width: 45em;
+            img{
+                width: 80%;
+            }
+          } 
+        @media only screen and (max-width: 730px) {
+            display: block;
+            width:80%;
+            img{
+                width: 60%;
+                }
+            .sidebar1{
+                justify-content: center;
+            }
+        } 
+      
         .sidebar1{
             padding: 2em 0;
             background-color: $navbar;
