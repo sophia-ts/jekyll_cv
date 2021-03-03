@@ -24,5 +24,5 @@
 
 `jekyll serve --host 0.0.0.0`
 
-Για να δούμε το site αρκεί να μπούμε στο locallhost:4000
+Για να δούμε το site αρκεί να μπούμε στο localhost:4000
 
