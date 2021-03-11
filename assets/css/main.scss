@@ -14,6 +14,16 @@ $secondary: #e39964;
 
 /*Code*/
 * { margin: 0; padding: 0; border: none; }
+@media print {
+    body .grid_container{
+        box-shadow: none !important;
+        margin: 0 !important;
+      }
+    @page {
+        size: A4 portrait;
+        box-shadow: none;
+      }
+}
 body{
     background-color: $bgcolor;
     color: $textcolor;
@@ -30,6 +40,7 @@ body{
         display: grid;
         grid-template-columns: 35% 65%;
         min-height: 1000px;
+
         @media only screen and (max-width: 1055px) {
             width: 45em;
             img{
