@@ -4,12 +4,11 @@ name: CI
 on:
   push:
     paths:
-      - .github/workflows/main.yml
-      - _data/data.yml
+      - _data/navigation.yml
     branches: [ main ]
   pull_request:
     paths:
-      - _data/data.yml
+      - _data/navigation.yml
     branches: [ main ]
 jobs:
   convert_to_pdf:
