@@ -22,6 +22,7 @@ jobs:
       - name: Install broken packges
         run: |
           sudo apt-get install texlive
+          update-tlmgr-latest.sh --update
           tlmgr init-usertree
           tlmgr --verify-repo=none install tcolorbox
       - name: Generate pdf from LaTex 
