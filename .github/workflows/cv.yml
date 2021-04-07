@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0
       - name: Install broken packges
         run: |
-          sudo tlmgr install tcolorbox
+          sudo apt-get install texlive
       - name: Generate pdf from LaTex 
         uses: docker://pandoc/latex:2.11.4
         with:
