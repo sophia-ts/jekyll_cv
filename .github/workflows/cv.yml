@@ -23,6 +23,7 @@ jobs:
         run: |
           sudo apt-get install texlive
           wget http://mirror.ctan.org/systems/texlive/tlnet/update-tlmgr-latest.sh
+          sudo kpsewhich --var-value=SELFAUTOPARENT
           export PATH="$(where texlive):$PATH"
           sudo sh ./update-tlmgr-latest.sh
           tlmgr init-usertree
