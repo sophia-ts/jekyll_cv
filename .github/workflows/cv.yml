@@ -26,6 +26,8 @@ jobs:
       - name: Commit changed files
         run: |
           sudo tlmgr install adjustbox
+          sudo tlmgr install collectbox
+          sudo tlmgr install ucs
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add assets/cv.pdf
