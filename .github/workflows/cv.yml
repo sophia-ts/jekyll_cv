@@ -25,6 +25,7 @@ jobs:
           args: " --pdf-engine=xelatex --template=_data/template.tex -o assets/cv.pdf _data/navigation.yml"
       - name: Commit changed files
         run: |
+          tlmgr update --self
           sudo tlmgr install adjustbox
           sudo tlmgr install collectbox
           sudo tlmgr install ucs
