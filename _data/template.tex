@@ -10,7 +10,8 @@
 \usepackage[OT1]{fontenc}
 \renewcommand*\familydefault{\sfdefault}
 
-\usepackage[a4paper, total={8in, 11.7in}]{geometry}
+
+\usepackage[a4paper, total={8in, 10in}]{geometry}
 
 
 % colors
@@ -30,7 +31,7 @@
         \includegraphics[width=#3]{#4}};
     }] {};}
     
-\setlength\columnsep{-100pt}
+\setlength\columnsep{-150pt}
 \setlength\abovedisplayskip{0pt}
 \setlength\belowdisplayskip{0pt}
 
@@ -42,18 +43,22 @@
     
 % }
 
+
 \begin{document}
     \begin{multicols}{2}
-        % \begin{tcolorbox}[width=75mm,height fill]
-        \begin{center}
+        % \begin{tcolorbox}[width=75mm,height fill]x
+        % \begin{center}
             \normalfont
-            \pagecolor{maincontent}
+            \pagecolor{navbar}
             \vspace{12mm}
             {\huge {\color{secondary}{\textbf{$details.name$}}}}
             \vspace{10mm}\\
             \includegraphics[scale=0.6]{$details.latex_image$} \\
-        \end{center}
+
+
+        % \end{center}
             \vspace{10mm}
+            \noindent
             {\Large {\color{header}\textbf{Contact}}}
             
             \vspace{3mm}
@@ -73,10 +78,12 @@
             \vspace{2mm}
 
             \vspace{7mm}
+            \noindent
             {\Large {\color{header}\textbf{Education}}}
 
             \vspace{3mm}
             $for(edu-info)$
+                \noindent
                 \color{white}{\textbf{$edu-info.education$}}\\
                 \color{secondary}{$edu-info.university$}\\
                 \color{secondary}{$edu-info.years$}\\
@@ -84,27 +91,29 @@
             $endfor$
 
             \vspace{5mm}
+            \noindent
             {\Large {\color{header}\textbf{Languages}}}
 
             \vspace{2mm}
             $for(languages)$
+            \noindent
                 \color{white}{\textbf{$languages.idiom$}}
                 \color{secondary}{({$languages.level$}})\\
             $endfor$
 
             \vspace{7mm}
+            \noindent
             {\Large {\color{header}\textbf{Skills}}}
 
             \vspace{2mm}
             $for(skills)$
+            \noindent
                 \color{white}{\textbf{$skills.like$}}\\
             $endfor$
             
             
         % \end{tcolorbox} 
     \columnbreak
-        \color{maincontent}{s}
-        \vspace{10mm}
 
         \begin{center}
             {\huge {\color{secondary}{\textbf{Career Profile}}}}\\
