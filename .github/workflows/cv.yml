@@ -23,7 +23,7 @@ jobs:
         run: |
           sudo apt-get install texlive
           wget http://mirror.ctan.org/systems/texlive/tlnet/update-tlmgr-latest.sh
-          sudo ./update-tlmgr-latest.sh
+          sudo sh ./update-tlmgr-latest.sh
           tlmgr init-usertree
           tlmgr --verify-repo=none install tcolorbox
       - name: Generate pdf from LaTex 
