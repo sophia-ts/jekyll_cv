@@ -1,6 +1,6 @@
 ---
 details:
-  name: Sophia Tsivoula .
+  name: Sophia Tsivoula
   profile_image: assets/me.png
   latex_image: assets/latex.png
 
@@ -63,7 +63,7 @@ experience:
     years: 2019 - Present
     description: |
       Presented a scientific paper called "An application for exploring visual perception.
-      A pilot neuroeducational study." And presented it in GeNeDis 2020 (Worldwide congress).
+      "A pilot neuroeducational study." And presented it in GeNeDis 2020 (Worldwide congress).
       The application's goal was the neuroeducation of the human brain for individual with 
       cognitive difficulties. The users had to observe an image for a few seconds and recreate it 
       from memory on an empty canvas using their mobile device.
