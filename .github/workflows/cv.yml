@@ -25,7 +25,7 @@ jobs:
           wget http://mirror.ctan.org/systems/texlive/tlnet/update-tlmgr-latest.sh
           sudo kpsewhich --var-value=SELFAUTOPARENT
           export PATH="$(where texlive):$PATH"
-          sudo sh ./update-tlmgr-latest.sh
+          sudo env PATH="$PATH" ./update-tlmgr-latest.sh
           tlmgr init-usertree
           tlmgr --verify-repo=none install tcolorbox
       - name: Generate pdf from LaTex 
