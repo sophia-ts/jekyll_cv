@@ -1,17 +1,23 @@
-name: Sophia Tsivoula
+---
+details:
+  name: Sophia Tsivoula
+  profile_image: assets/me.png
+  latex_image: assets/latex.png
 
 # links
-linkedin: sophia-tsivoula
-github: sophia-ts
-email: sophia.sts.21@gmail.com
-work-email: p18tsiv@ionio.gr    
-twitter: '@SophiaTs_'
-twitter_link: https://twitter.com/SophiaTs_
+links:
+  linkedin: sophia-tsivoula
+  github: sophia-ts
+  email: sophia.sts.21@gmail.com
+  work-email: p18tsiv@ionio.gr    
+  twitter: '@SophiaTs_'
+  twitter_link: https://twitter.com/SophiaTs_
 
 #education
-education:   BSc in Computer Science
-university:  Ionian University
-years:  2018 - 2022
+edu-info:
+  - education:   BSc in Computer Science
+    university:  Ionian University
+    years:  2018 - 2022
 
 # languages
 languages:
@@ -68,7 +74,6 @@ volunteering:
     position: IT team
     years: 2019 - Present
     link: https://tedxionianuniversity.com/
-    # link: https://tedxionianuniversity.com/
     description: |
       Developed a presentation website and an e-shop for selling tickets for a virtual event. 
       The website was created on WordPress using the Divi Visual Builder.
@@ -79,3 +84,4 @@ volunteering:
     description: |
       Organized the activity planning team on the IEEE Ionian Student Branch and 
       planned two successful webinars.
+---

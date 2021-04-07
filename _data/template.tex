@@ -1,0 +1,154 @@
+\documentclass{article}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{multicol}
+\usepackage{xcolor}  
+\usepackage[export]{adjustbox}
+\usepackage{hyperref}
+\usepackage[most]{tcolorbox}  
+\usepackage{multicol}
+
+\usepackage[OT1]{fontenc}
+\renewcommand*\familydefault{\sfdefault}
+
+\usepackage[a4paper, total={8in, 11.7in}]{geometry}
+
+
+% colors
+\definecolor{secondary}{HTML}{e39964}
+\definecolor{bgcolor}{HTML}{7a7a7a}
+\definecolor{header}{HTML}{dbdbdb}
+\definecolor{maincontent}{HTML}{353535}
+\definecolor{hovercolor}{HTML}{454545}
+\definecolor{faded}{HTML}{808080}
+\definecolor{navbar}{HTML}{3e3e3e}
+
+
+\newcommand{\roundpic}[4][]{
+  \tikz\node [circle, minimum width = #2,
+    path picture = {
+      \node [#1] at (path picture bounding box.center) {
+        \includegraphics[width=#3]{#4}};
+    }] {};}
+    
+\setlength\columnsep{-100pt}
+\setlength\abovedisplayskip{0pt}
+\setlength\belowdisplayskip{0pt}
+
+\tcbset{
+    enhanced,
+    colback=navbar,
+    borderline west={5mm}{-5mm}{navbar},
+    fonttitle=\bfseries
+    
+}
+
+\begin{document}
+    \begin{multicols}{2}
+        \begin{tcolorbox}[width=75mm,height fill]
+        \begin{center}
+            \normalfont
+            \pagecolor{maincontent}
+            \vspace{12mm}
+            {\huge {\color{secondary}{\textbf{$details.name$}}}}
+            \vspace{10mm}\\
+            \includegraphics[scale=0.6]{$details.latex_image$} \\
+        \end{center}
+            \vspace{10mm}
+            {\Large {\color{header}\textbf{Contact}}}
+            
+            \vspace{3mm}
+            \textcolor{secondary}{$links.email$}
+            \vspace{2mm}
+            
+            \textcolor{secondary}{$links.work-email$}
+            \vspace{2mm}
+
+            \textcolor{secondary}{\href{https://www.linkedin.com/in/$links.linkedin$}{$links.linkedin$}}
+            \vspace{2mm}
+
+            \textcolor{secondary}{\href{https://github.com/$links.github$}{$links.github$}}
+            \vspace{2mm}
+
+            \textcolor{secondary}{\href{$links.twitter_link$}{$links.twitter$}}
+            \vspace{2mm}
+
+            \vspace{7mm}
+            {\Large {\color{header}\textbf{Education}}}
+
+            \vspace{3mm}
+            $for(edu-info)$
+                \color{white}{\textbf{$edu-info.education$}}\\
+                \color{secondary}{$edu-info.university$}\\
+                \color{secondary}{$edu-info.years$}\\
+                \vspace{5mm}
+            $endfor$
+
+            \vspace{5mm}
+            {\Large {\color{header}\textbf{Languages}}}
+
+            \vspace{2mm}
+            $for(languages)$
+                \color{white}{\textbf{$languages.idiom$}}
+                \color{secondary}{({$languages.level$}})\\
+            $endfor$
+
+            \vspace{7mm}
+            {\Large {\color{header}\textbf{Skills}}}
+
+            \vspace{2mm}
+            $for(skills)$
+                \color{white}{\textbf{$skills.like$}}\\
+            $endfor$
+            
+            
+        \end{tcolorbox} 
+    \columnbreak
+        \color{maincontent}{s}
+        \vspace{10mm}
+
+        \begin{center}
+            {\huge {\color{secondary}{\textbf{Career Profile}}}}\\
+        \end{center}
+
+        \vspace{5mm}
+        \noindent
+        \color{white}{$career$}
+        \vspace{5mm}\\
+
+
+        \begin{center}
+            {\huge {\color{secondary}{\textbf{Experience}}}}\\
+        \end{center}
+       
+        \vspace{3mm}
+        $for(experience)$
+        \noindent
+            \color{white}{\textbf{$experience.title$}}\\
+            \color{secondary}{$experience.company$}\hfill
+            \noindent
+            \color{white}{$experience.years$}\\
+            \color{white}{$experience.description$}
+
+            \vspace{10mm}
+        $endfor$
+
+        
+        \begin{center}
+            {\huge {\color{secondary}{\textbf{Volunteering}}}}\\
+        \end{center}
+
+        \vspace{3mm}
+        $for(volunteering)$
+        \noindent
+            \color{white}{\textbf{$volunteering.title$}}\\
+            \color{secondary}{$volunteering.position$}\hfill
+            \noindent
+            \color{white}{$volunteering.years$}\\
+            \color{white}{$volunteering.description$}
+
+            \vspace{8mm}
+        $endfor$
+
+    \end{multicols}
+\end{document}
