@@ -1,4 +1,8 @@
 <h3>Education</h3>
-<h4>{{ site.data.navigation.education }}</h4>
-<p>{{ site.data.navigation.university }}</p>
-<p>{{ site.data.navigation.years }}</p>
+{% assign education = site.data.navigation.edu-info %}
+
+{%for edu in education %}
+    <h4>{{ edu.education }}</h4>
+    <p>{{ edu.university }}</p>
+    <p>{{ edu.years }}</p>
+{% endfor %}
